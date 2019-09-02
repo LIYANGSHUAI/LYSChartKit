@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC7E9FCA231676D80034A696 /* LYSChartOption.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7E9FC9231676D80034A696 /* LYSChartOption.m */; };
+		CC7E9FCC231677280034A696 /* bar-tick-align.html in Resources */ = {isa = PBXBuildFile; fileRef = CC7E9FCB231677280034A696 /* bar-tick-align.html */; };
+		CC7E9FD1231679740034A696 /* LYSChartGridInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7E9FD0231679740034A696 /* LYSChartGridInfo.m */; };
+		CC7E9FD4231679C60034A696 /* LYSChartXAxisInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7E9FD3231679C60034A696 /* LYSChartXAxisInfo.m */; };
+		CC7E9FD7231679D60034A696 /* LYSChartYAxisInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7E9FD6231679D60034A696 /* LYSChartYAxisInfo.m */; };
+		CC7E9FDA231679EB0034A696 /* LYSChartSeriesInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7E9FD9231679EB0034A696 /* LYSChartSeriesInfo.m */; };
+		CC7E9FDD23167D180034A696 /* LYSChartTooltipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7E9FDC23167D180034A696 /* LYSChartTooltipInfo.m */; };
+		CC7E9FE0231682480034A696 /* LYSchartInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7E9FDF231682480034A696 /* LYSchartInfo.m */; };
+		CCA245382315175C00257DCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA245372315175C00257DCC /* AppDelegate.m */; };
+		CCA2453B2315175C00257DCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA2453A2315175C00257DCC /* ViewController.m */; };
+		CCA2453E2315175C00257DCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA2453C2315175C00257DCC /* Main.storyboard */; };
+		CCA245402315175D00257DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA2453F2315175D00257DCC /* Assets.xcassets */; };
+		CCA245432315175D00257DCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA245412315175D00257DCC /* LaunchScreen.storyboard */; };
+		CCA245462315175D00257DCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA245452315175D00257DCC /* main.m */; };
+		CCA245502315175D00257DCC /* LYSChartKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA2454F2315175D00257DCC /* LYSChartKitDemoTests.m */; };
+		CCA2455B2315175D00257DCC /* LYSChartKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA2455A2315175D00257DCC /* LYSChartKitDemoUITests.m */; };
+		CCA2456B231517C200257DCC /* LYSLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA2456A231517C200257DCC /* LYSLineChartView.m */; };
+		CCA2456E231517D200257DCC /* LYSChartBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA2456D231517D200257DCC /* LYSChartBaseView.m */; };
+		CCA245A22315294700257DCC /* line-simple.html in Resources */ = {isa = PBXBuildFile; fileRef = CCA245A12315294700257DCC /* line-simple.html */; };
+		CCA245A42315297C00257DCC /* echarts.common.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CCA245A32315297C00257DCC /* echarts.common.min.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCA2454C2315175D00257DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA2452B2315175C00257DCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA245322315175C00257DCC;
+			remoteInfo = LYSChartKitDemo;
+		};
+		CCA245572315175D00257DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA2452B2315175C00257DCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA245322315175C00257DCC;
+			remoteInfo = LYSChartKitDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC7E9FC8231676D80034A696 /* LYSChartOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartOption.h; sourceTree = "<group>"; };
+		CC7E9FC9231676D80034A696 /* LYSChartOption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartOption.m; sourceTree = "<group>"; };
+		CC7E9FCB231677280034A696 /* bar-tick-align.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "bar-tick-align.html"; sourceTree = "<group>"; };
+		CC7E9FCF231679740034A696 /* LYSChartGridInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartGridInfo.h; sourceTree = "<group>"; };
+		CC7E9FD0231679740034A696 /* LYSChartGridInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartGridInfo.m; sourceTree = "<group>"; };
+		CC7E9FD2231679C60034A696 /* LYSChartXAxisInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartXAxisInfo.h; sourceTree = "<group>"; };
+		CC7E9FD3231679C60034A696 /* LYSChartXAxisInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartXAxisInfo.m; sourceTree = "<group>"; };
+		CC7E9FD5231679D60034A696 /* LYSChartYAxisInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartYAxisInfo.h; sourceTree = "<group>"; };
+		CC7E9FD6231679D60034A696 /* LYSChartYAxisInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartYAxisInfo.m; sourceTree = "<group>"; };
+		CC7E9FD8231679EB0034A696 /* LYSChartSeriesInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartSeriesInfo.h; sourceTree = "<group>"; };
+		CC7E9FD9231679EB0034A696 /* LYSChartSeriesInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartSeriesInfo.m; sourceTree = "<group>"; };
+		CC7E9FDB23167D180034A696 /* LYSChartTooltipInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartTooltipInfo.h; sourceTree = "<group>"; };
+		CC7E9FDC23167D180034A696 /* LYSChartTooltipInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartTooltipInfo.m; sourceTree = "<group>"; };
+		CC7E9FDE231682480034A696 /* LYSchartInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSchartInfo.h; sourceTree = "<group>"; };
+		CC7E9FDF231682480034A696 /* LYSchartInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSchartInfo.m; sourceTree = "<group>"; };
+		CCA245332315175C00257DCC /* LYSChartKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSChartKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA245362315175C00257DCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCA245372315175C00257DCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCA245392315175C00257DCC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CCA2453A2315175C00257DCC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CCA2453D2315175C00257DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCA2453F2315175D00257DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCA245422315175D00257DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCA245442315175D00257DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA245452315175D00257DCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCA2454B2315175D00257DCC /* LYSChartKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYSChartKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA2454F2315175D00257DCC /* LYSChartKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartKitDemoTests.m; sourceTree = "<group>"; };
+		CCA245512315175D00257DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA245562315175D00257DCC /* LYSChartKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYSChartKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA2455A2315175D00257DCC /* LYSChartKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartKitDemoUITests.m; sourceTree = "<group>"; };
+		CCA2455C2315175D00257DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA24569231517C200257DCC /* LYSLineChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSLineChartView.h; sourceTree = "<group>"; };
+		CCA2456A231517C200257DCC /* LYSLineChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSLineChartView.m; sourceTree = "<group>"; };
+		CCA2456C231517D200257DCC /* LYSChartBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartBaseView.h; sourceTree = "<group>"; };
+		CCA2456D231517D200257DCC /* LYSChartBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartBaseView.m; sourceTree = "<group>"; };
+		CCA245A12315294700257DCC /* line-simple.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "line-simple.html"; sourceTree = "<group>"; };
+		CCA245A32315297C00257DCC /* echarts.common.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = echarts.common.min.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCA245302315175C00257DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA245482315175D00257DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA245532315175D00257DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC7E9FCE231679320034A696 /* options */ = {
+			isa = PBXGroup;
+			children = (
+				CC7E9FDE231682480034A696 /* LYSchartInfo.h */,
+				CC7E9FDF231682480034A696 /* LYSchartInfo.m */,
+				CC7E9FDB23167D180034A696 /* LYSChartTooltipInfo.h */,
+				CC7E9FDC23167D180034A696 /* LYSChartTooltipInfo.m */,
+				CC7E9FCF231679740034A696 /* LYSChartGridInfo.h */,
+				CC7E9FD0231679740034A696 /* LYSChartGridInfo.m */,
+				CC7E9FD2231679C60034A696 /* LYSChartXAxisInfo.h */,
+				CC7E9FD3231679C60034A696 /* LYSChartXAxisInfo.m */,
+				CC7E9FD5231679D60034A696 /* LYSChartYAxisInfo.h */,
+				CC7E9FD6231679D60034A696 /* LYSChartYAxisInfo.m */,
+				CC7E9FD8231679EB0034A696 /* LYSChartSeriesInfo.h */,
+				CC7E9FD9231679EB0034A696 /* LYSChartSeriesInfo.m */,
+				CC7E9FC8231676D80034A696 /* LYSChartOption.h */,
+				CC7E9FC9231676D80034A696 /* LYSChartOption.m */,
+			);
+			name = options;
+			sourceTree = "<group>";
+		};
+		CCA2452A2315175C00257DCC = {
+			isa = PBXGroup;
+			children = (
+				CCA245352315175C00257DCC /* LYSChartKitDemo */,
+				CCA2454E2315175D00257DCC /* LYSChartKitDemoTests */,
+				CCA245592315175D00257DCC /* LYSChartKitDemoUITests */,
+				CCA245342315175C00257DCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCA245342315175C00257DCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCA245332315175C00257DCC /* LYSChartKitDemo.app */,
+				CCA2454B2315175D00257DCC /* LYSChartKitDemoTests.xctest */,
+				CCA245562315175D00257DCC /* LYSChartKitDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCA245352315175C00257DCC /* LYSChartKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CCA245362315175C00257DCC /* AppDelegate.h */,
+				CCA245372315175C00257DCC /* AppDelegate.m */,
+				CCA245392315175C00257DCC /* ViewController.h */,
+				CCA2453A2315175C00257DCC /* ViewController.m */,
+				CCA24568231517A900257DCC /* LYSChartKit */,
+				CCA2453C2315175C00257DCC /* Main.storyboard */,
+				CCA2453F2315175D00257DCC /* Assets.xcassets */,
+				CCA245412315175D00257DCC /* LaunchScreen.storyboard */,
+				CCA245442315175D00257DCC /* Info.plist */,
+				CCA245452315175D00257DCC /* main.m */,
+			);
+			path = LYSChartKitDemo;
+			sourceTree = "<group>";
+		};
+		CCA2454E2315175D00257DCC /* LYSChartKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCA2454F2315175D00257DCC /* LYSChartKitDemoTests.m */,
+				CCA245512315175D00257DCC /* Info.plist */,
+			);
+			path = LYSChartKitDemoTests;
+			sourceTree = "<group>";
+		};
+		CCA245592315175D00257DCC /* LYSChartKitDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCA2455A2315175D00257DCC /* LYSChartKitDemoUITests.m */,
+				CCA2455C2315175D00257DCC /* Info.plist */,
+			);
+			path = LYSChartKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		CCA24568231517A900257DCC /* LYSChartKit */ = {
+			isa = PBXGroup;
+			children = (
+				CCA245A32315297C00257DCC /* echarts.common.min.js */,
+				CCA245A12315294700257DCC /* line-simple.html */,
+				CC7E9FCB231677280034A696 /* bar-tick-align.html */,
+				CC7E9FCE231679320034A696 /* options */,
+				CCA2456C231517D200257DCC /* LYSChartBaseView.h */,
+				CCA2456D231517D200257DCC /* LYSChartBaseView.m */,
+				CCA24569231517C200257DCC /* LYSLineChartView.h */,
+				CCA2456A231517C200257DCC /* LYSLineChartView.m */,
+			);
+			name = LYSChartKit;
+			path = ../../LYSChartKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCA245322315175C00257DCC /* LYSChartKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA2455F2315175D00257DCC /* Build configuration list for PBXNativeTarget "LYSChartKitDemo" */;
+			buildPhases = (
+				CCA2452F2315175C00257DCC /* Sources */,
+				CCA245302315175C00257DCC /* Frameworks */,
+				CCA245312315175C00257DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYSChartKitDemo;
+			productName = LYSChartKitDemo;
+			productReference = CCA245332315175C00257DCC /* LYSChartKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCA2454A2315175D00257DCC /* LYSChartKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA245622315175D00257DCC /* Build configuration list for PBXNativeTarget "LYSChartKitDemoTests" */;
+			buildPhases = (
+				CCA245472315175D00257DCC /* Sources */,
+				CCA245482315175D00257DCC /* Frameworks */,
+				CCA245492315175D00257DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCA2454D2315175D00257DCC /* PBXTargetDependency */,
+			);
+			name = LYSChartKitDemoTests;
+			productName = LYSChartKitDemoTests;
+			productReference = CCA2454B2315175D00257DCC /* LYSChartKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCA245552315175D00257DCC /* LYSChartKitDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA245652315175D00257DCC /* Build configuration list for PBXNativeTarget "LYSChartKitDemoUITests" */;
+			buildPhases = (
+				CCA245522315175D00257DCC /* Sources */,
+				CCA245532315175D00257DCC /* Frameworks */,
+				CCA245542315175D00257DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCA245582315175D00257DCC /* PBXTargetDependency */,
+			);
+			name = LYSChartKitDemoUITests;
+			productName = LYSChartKitDemoUITests;
+			productReference = CCA245562315175D00257DCC /* LYSChartKitDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCA2452B2315175C00257DCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = HENAN;
+				TargetAttributes = {
+					CCA245322315175C00257DCC = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					CCA2454A2315175D00257DCC = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = CCA245322315175C00257DCC;
+					};
+					CCA245552315175D00257DCC = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = CCA245322315175C00257DCC;
+					};
+				};
+			};
+			buildConfigurationList = CCA2452E2315175C00257DCC /* Build configuration list for PBXProject "LYSChartKitDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCA2452A2315175C00257DCC;
+			productRefGroup = CCA245342315175C00257DCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCA245322315175C00257DCC /* LYSChartKitDemo */,
+				CCA2454A2315175D00257DCC /* LYSChartKitDemoTests */,
+				CCA245552315175D00257DCC /* LYSChartKitDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCA245312315175C00257DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA245432315175D00257DCC /* LaunchScreen.storyboard in Resources */,
+				CCA245402315175D00257DCC /* Assets.xcassets in Resources */,
+				CCA245A42315297C00257DCC /* echarts.common.min.js in Resources */,
+				CCA245A22315294700257DCC /* line-simple.html in Resources */,
+				CCA2453E2315175C00257DCC /* Main.storyboard in Resources */,
+				CC7E9FCC231677280034A696 /* bar-tick-align.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA245492315175D00257DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA245542315175D00257DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCA2452F2315175C00257DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7E9FDD23167D180034A696 /* LYSChartTooltipInfo.m in Sources */,
+				CC7E9FD1231679740034A696 /* LYSChartGridInfo.m in Sources */,
+				CC7E9FD4231679C60034A696 /* LYSChartXAxisInfo.m in Sources */,
+				CC7E9FE0231682480034A696 /* LYSchartInfo.m in Sources */,
+				CC7E9FCA231676D80034A696 /* LYSChartOption.m in Sources */,
+				CCA2453B2315175C00257DCC /* ViewController.m in Sources */,
+				CCA2456E231517D200257DCC /* LYSChartBaseView.m in Sources */,
+				CCA245462315175D00257DCC /* main.m in Sources */,
+				CCA2456B231517C200257DCC /* LYSLineChartView.m in Sources */,
+				CCA245382315175C00257DCC /* AppDelegate.m in Sources */,
+				CC7E9FDA231679EB0034A696 /* LYSChartSeriesInfo.m in Sources */,
+				CC7E9FD7231679D60034A696 /* LYSChartYAxisInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA245472315175D00257DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA245502315175D00257DCC /* LYSChartKitDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA245522315175D00257DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA2455B2315175D00257DCC /* LYSChartKitDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCA2454D2315175D00257DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA245322315175C00257DCC /* LYSChartKitDemo */;
+			targetProxy = CCA2454C2315175D00257DCC /* PBXContainerItemProxy */;
+		};
+		CCA245582315175D00257DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA245322315175C00257DCC /* LYSChartKitDemo */;
+			targetProxy = CCA245572315175D00257DCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCA2453C2315175C00257DCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCA2453D2315175C00257DCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCA245412315175D00257DCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCA245422315175D00257DCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCA2455D2315175D00257DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CCA2455E2315175D00257DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCA245602315175D00257DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HKHKXULF6R;
+				INFOPLIST_FILE = LYSChartKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.ZJCS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ZJCS;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCA245612315175D00257DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HKHKXULF6R;
+				INFOPLIST_FILE = LYSChartKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.ZJCS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ZJCS;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCA245632315175D00257DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYSChartKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LYS.LYSChartKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYSChartKitDemo.app/LYSChartKitDemo";
+			};
+			name = Debug;
+		};
+		CCA245642315175D00257DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYSChartKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LYS.LYSChartKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYSChartKitDemo.app/LYSChartKitDemo";
+			};
+			name = Release;
+		};
+		CCA245662315175D00257DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYSChartKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LYS.LYSChartKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LYSChartKitDemo;
+			};
+			name = Debug;
+		};
+		CCA245672315175D00257DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYSChartKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LYS.LYSChartKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LYSChartKitDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCA2452E2315175C00257DCC /* Build configuration list for PBXProject "LYSChartKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA2455D2315175D00257DCC /* Debug */,
+				CCA2455E2315175D00257DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCA2455F2315175D00257DCC /* Build configuration list for PBXNativeTarget "LYSChartKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA245602315175D00257DCC /* Debug */,
+				CCA245612315175D00257DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCA245622315175D00257DCC /* Build configuration list for PBXNativeTarget "LYSChartKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA245632315175D00257DCC /* Debug */,
+				CCA245642315175D00257DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCA245652315175D00257DCC /* Build configuration list for PBXNativeTarget "LYSChartKitDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA245662315175D00257DCC /* Debug */,
+				CCA245672315175D00257DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCA2452B2315175C00257DCC /* Project object */;
+}
