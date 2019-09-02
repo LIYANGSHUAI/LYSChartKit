@@ -11,13 +11,9 @@
 @implementation LYSChartTooltipInfo
 - (NSDictionary *)resultDict
 {
-    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:[super resultDict]];
-    if (self.show) {
-        [dict setObject:@(self.show) forKey:@"show"];
-    }
-    if (self.trigger) {
-        [dict setObject:self.trigger forKey:@"trigger"];
-    }
+    NSMutableDictionary *dict = LYSCHARTDICT;
+    LYSCHARTSETDICT(dict, @(self.show), @"show");
+    LYSCHARTSETDICT(dict, self.trigger, @"trigger");
     return dict;
 }
 @end

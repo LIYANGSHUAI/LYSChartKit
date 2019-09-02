@@ -11,37 +11,15 @@
 @implementation LYSChartGridInfo
 - (NSDictionary *)resultDict
 {
-    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:[super resultDict]];
-    if (self.containLabel) {
-        [dict setObject:@(self.containLabel) forKey:@"containLabel"];
-    }
-    if (self.left) {
-        [dict setObject:self.left forKey:@"left"];
-    }
-    if (self.top) {
-        [dict setObject:self.top forKey:@"top"];
-    }
-    if (self.right) {
-        [dict setObject:self.right forKey:@"right"];
-    }
-    if (self.bottom) {
-        [dict setObject:self.bottom forKey:@"bottom"];
-    }
-    
-    if (self.backgroundColor) {
-        [dict setObject:self.backgroundColor forKey:@"backgroundColor"];
-    }
-    if (self.borderColor) {
-        [dict setObject:self.borderColor forKey:@"borderColor"];
-    }
-    if (self.borderWidth) {
-        [dict setObject:@(self.borderWidth) forKey:@"borderWidth"];
-    }
-    
-    if (self.tooltip) {
-        [dict setObject:self.tooltip.resultDict forKey:@"tooltip"];
-    }
-    
+    NSMutableDictionary *dict = LYSCHARTDICT;
+    LYSCHARTSETDICT(dict, @(self.containLabel), @"containLabel")
+    LYSCHARTSETDICT(dict, self.left, @"left")
+    LYSCHARTSETDICT(dict, self.top, @"top")
+    LYSCHARTSETDICT(dict, self.right, @"right")
+    LYSCHARTSETDICT(dict, self.bottom, @"bottom")
+    LYSCHARTSETDICT(dict, self.backgroundColor, @"backgroundColor")
+    LYSCHARTSETDICT(dict, @(self.borderWidth), @"borderWidth")
+    LYSCHARTSETDICT(dict, self.tooltip, @"tooltip")
     return dict;
 }
 @end

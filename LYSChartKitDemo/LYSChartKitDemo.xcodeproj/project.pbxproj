@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC485A6B231D10E4006914D1 /* LYSChartNameTextStyleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC485A6A231D10E4006914D1 /* LYSChartNameTextStyleInfo.m */; };
+		CC485A6E231D178E006914D1 /* LYSChartAxisLabelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC485A6D231D178E006914D1 /* LYSChartAxisLabelInfo.m */; };
 		CC7E9FCA231676D80034A696 /* LYSChartOption.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7E9FC9231676D80034A696 /* LYSChartOption.m */; };
 		CC7E9FCC231677280034A696 /* bar-tick-align.html in Resources */ = {isa = PBXBuildFile; fileRef = CC7E9FCB231677280034A696 /* bar-tick-align.html */; };
 		CC7E9FD1231679740034A696 /* LYSChartGridInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7E9FD0231679740034A696 /* LYSChartGridInfo.m */; };
@@ -47,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC485A63231D09BD006914D1 /* LYSChartDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartDefine.h; sourceTree = "<group>"; };
+		CC485A69231D10E4006914D1 /* LYSChartNameTextStyleInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartNameTextStyleInfo.h; sourceTree = "<group>"; };
+		CC485A6A231D10E4006914D1 /* LYSChartNameTextStyleInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartNameTextStyleInfo.m; sourceTree = "<group>"; };
+		CC485A6C231D178E006914D1 /* LYSChartAxisLabelInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartAxisLabelInfo.h; sourceTree = "<group>"; };
+		CC485A6D231D178E006914D1 /* LYSChartAxisLabelInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartAxisLabelInfo.m; sourceTree = "<group>"; };
 		CC7E9FC8231676D80034A696 /* LYSChartOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartOption.h; sourceTree = "<group>"; };
 		CC7E9FC9231676D80034A696 /* LYSChartOption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartOption.m; sourceTree = "<group>"; };
 		CC7E9FCB231677280034A696 /* bar-tick-align.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "bar-tick-align.html"; sourceTree = "<group>"; };
@@ -111,21 +118,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC485A64231D0FCD006914D1 /* xAxis */ = {
+			isa = PBXGroup;
+			children = (
+				CC7E9FD2231679C60034A696 /* LYSChartXAxisInfo.h */,
+				CC7E9FD3231679C60034A696 /* LYSChartXAxisInfo.m */,
+			);
+			name = xAxis;
+			sourceTree = "<group>";
+		};
+		CC485A65231D0FDB006914D1 /* grid */ = {
+			isa = PBXGroup;
+			children = (
+				CC7E9FCF231679740034A696 /* LYSChartGridInfo.h */,
+				CC7E9FD0231679740034A696 /* LYSChartGridInfo.m */,
+			);
+			name = grid;
+			sourceTree = "<group>";
+		};
+		CC485A66231D0FE9006914D1 /* yAxis */ = {
+			isa = PBXGroup;
+			children = (
+				CC7E9FD5231679D60034A696 /* LYSChartYAxisInfo.h */,
+				CC7E9FD6231679D60034A696 /* LYSChartYAxisInfo.m */,
+			);
+			name = yAxis;
+			sourceTree = "<group>";
+		};
+		CC485A67231D1002006914D1 /* series */ = {
+			isa = PBXGroup;
+			children = (
+				CC7E9FD8231679EB0034A696 /* LYSChartSeriesInfo.h */,
+				CC7E9FD9231679EB0034A696 /* LYSChartSeriesInfo.m */,
+			);
+			name = series;
+			sourceTree = "<group>";
+		};
+		CC485A68231D100E006914D1 /* tooltip */ = {
+			isa = PBXGroup;
+			children = (
+				CC7E9FDB23167D180034A696 /* LYSChartTooltipInfo.h */,
+				CC7E9FDC23167D180034A696 /* LYSChartTooltipInfo.m */,
+			);
+			name = tooltip;
+			sourceTree = "<group>";
+		};
+		CC485A6F231D182C006914D1 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				CC485A69231D10E4006914D1 /* LYSChartNameTextStyleInfo.h */,
+				CC485A6A231D10E4006914D1 /* LYSChartNameTextStyleInfo.m */,
+				CC485A6C231D178E006914D1 /* LYSChartAxisLabelInfo.h */,
+				CC485A6D231D178E006914D1 /* LYSChartAxisLabelInfo.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
 		CC7E9FCE231679320034A696 /* options */ = {
 			isa = PBXGroup;
 			children = (
+				CC485A6F231D182C006914D1 /* common */,
+				CC485A68231D100E006914D1 /* tooltip */,
+				CC485A67231D1002006914D1 /* series */,
+				CC485A66231D0FE9006914D1 /* yAxis */,
+				CC485A65231D0FDB006914D1 /* grid */,
+				CC485A64231D0FCD006914D1 /* xAxis */,
+				CC485A63231D09BD006914D1 /* LYSChartDefine.h */,
 				CC7E9FDE231682480034A696 /* LYSchartInfo.h */,
 				CC7E9FDF231682480034A696 /* LYSchartInfo.m */,
-				CC7E9FDB23167D180034A696 /* LYSChartTooltipInfo.h */,
-				CC7E9FDC23167D180034A696 /* LYSChartTooltipInfo.m */,
-				CC7E9FCF231679740034A696 /* LYSChartGridInfo.h */,
-				CC7E9FD0231679740034A696 /* LYSChartGridInfo.m */,
-				CC7E9FD2231679C60034A696 /* LYSChartXAxisInfo.h */,
-				CC7E9FD3231679C60034A696 /* LYSChartXAxisInfo.m */,
-				CC7E9FD5231679D60034A696 /* LYSChartYAxisInfo.h */,
-				CC7E9FD6231679D60034A696 /* LYSChartYAxisInfo.m */,
-				CC7E9FD8231679EB0034A696 /* LYSChartSeriesInfo.h */,
-				CC7E9FD9231679EB0034A696 /* LYSChartSeriesInfo.m */,
 				CC7E9FC8231676D80034A696 /* LYSChartOption.h */,
 				CC7E9FC9231676D80034A696 /* LYSChartOption.m */,
 			);
@@ -342,12 +402,14 @@
 				CC7E9FE0231682480034A696 /* LYSchartInfo.m in Sources */,
 				CC7E9FCA231676D80034A696 /* LYSChartOption.m in Sources */,
 				CCA2453B2315175C00257DCC /* ViewController.m in Sources */,
+				CC485A6B231D10E4006914D1 /* LYSChartNameTextStyleInfo.m in Sources */,
 				CCA2456E231517D200257DCC /* LYSChartBaseView.m in Sources */,
 				CCA245462315175D00257DCC /* main.m in Sources */,
 				CCA2456B231517C200257DCC /* LYSLineChartView.m in Sources */,
 				CCA245382315175C00257DCC /* AppDelegate.m in Sources */,
 				CC7E9FDA231679EB0034A696 /* LYSChartSeriesInfo.m in Sources */,
 				CC7E9FD7231679D60034A696 /* LYSChartYAxisInfo.m in Sources */,
+				CC485A6E231D178E006914D1 /* LYSChartAxisLabelInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

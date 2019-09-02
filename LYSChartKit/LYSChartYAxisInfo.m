@@ -11,10 +11,10 @@
 @implementation LYSChartYAxisInfo
 - (NSDictionary *)resultDict
 {
-    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:[super resultDict]];
-    if (self.type) {
-        [dict setObject:self.type forKey:@"type"];
-    }
+    NSMutableDictionary *dict = LYSCHARTDICT;
+    LYSCHARTSETDICT(dict, self.type, @"type");
+    LYSCHARTSETDICT(dict, self.nameTextStyle.resultDict, @"nameTextStyle");
+    LYSCHARTSETDICT(dict, self.axisLabel.resultDict, @"axisLabel");
     return dict;
 }
 @end

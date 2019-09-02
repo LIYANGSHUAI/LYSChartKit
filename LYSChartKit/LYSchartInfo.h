@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LYSChartDefine.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LYSchartInfo : NSObject
-@property (nonatomic, strong) NSDictionary *resultDict;
+LYSCHARTADDSTRONGPROPERTY(NSDictionary *resultDict);
 @end
 
 NS_ASSUME_NONNULL_END

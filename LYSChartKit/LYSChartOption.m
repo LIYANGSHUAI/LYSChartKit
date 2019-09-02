@@ -10,8 +10,6 @@
 
 @implementation LYSChartOption
 
-
-
 - (NSDictionary *)resultDict
 {
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:[super resultDict]];
@@ -28,17 +26,6 @@
         [dict setObject:[self.series[0] resultDict] forKey:@"series"];
     }
     return dict;
-}
-
-
-- (NSString *)aaa
-{
-    return @"1111"
-}
-
-- (void)setAaa:(NSString *)aaa
-{
-    
 }
 
 @end

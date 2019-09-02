@@ -12,10 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LYSChartTooltipInfo : LYSchartInfo
 // 显示和隐藏
-@property (nonatomic, assign) BOOL show;
-
-@property (nonatomic, copy) NSString *trigger;
-
+LYSCHARTADDASSIGNPROPERTY(BOOL show);
+LYSCHARTADDCOPYPROPERTY(NSString *trigger);
 @end
 
 NS_ASSUME_NONNULL_END

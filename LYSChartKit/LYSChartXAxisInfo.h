@@ -7,17 +7,19 @@
 //
 
 #import "LYSchartInfo.h"
-
+#import "LYSChartNameTextStyleInfo.h"
+#import "LYSChartAxisLabelInfo.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LYSChartXAxisInfo : LYSchartInfo
 // 是否显示X轴
-@property (nonatomic, assign) BOOL show;
+LYSCHARTADDASSIGNPROPERTY(BOOL show);
 // 坐标轴类型, value, category, log
-@property (nonatomic, copy) NSString *type;
+LYSCHARTADDCOPYPROPERTY(NSString *type);
+LYSCHARTADDSTRONGPROPERTY(NSArray *data);
 
-@property (nonatomic, strong) NSArray *data;
-
+LYSCHARTADDSTRONGPROPERTY(LYSChartNameTextStyleInfo *nameTextStyle);
+LYSCHARTADDSTRONGPROPERTY(LYSChartAxisLabelInfo *axisLabel);
 @end
 
 NS_ASSUME_NONNULL_END

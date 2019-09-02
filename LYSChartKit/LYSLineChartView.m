@@ -119,21 +119,35 @@
     girdInfo.left = @"10%";
     girdInfo.top = @"3%";
     girdInfo.right = @"3%";
-    girdInfo.bottom = @"3%";
+    girdInfo.bottom = @"10%";
     optons.grids = @[girdInfo];
     
     LYSChartXAxisInfo *xAxisInfo = [[LYSChartXAxisInfo alloc] init];
     xAxisInfo.type = @"category";
     xAxisInfo.data = @[@"Mon", @"Tue", @"Wed", @"Thu", @"Fri", @"Sat", @"Sun"];
     xAxisInfo.show = YES;
+    
+    LYSChartAxisLabelInfo *info = [[LYSChartAxisLabelInfo alloc] init];
+    info.fontSize = 25;
+    info.interval = @"auto";
+//    info.inside = YES;
+    info.show = NO;
+    info.rotate = 0;
+    info.margin = 10;
+    info.color = @"#555555";
+    info.borderColor = @"red";
+    info.borderWidth = 1;
+    info.borderRadius = 10;
+    xAxisInfo.axisLabel = info;
     optons.xAxis = @[xAxisInfo];
     
     LYSChartYAxisInfo *yAxisInfo = [[LYSChartYAxisInfo alloc] init];
     yAxisInfo.type = @"value";
+    yAxisInfo.axisLabel = info;
     optons.yAxis = @[yAxisInfo];
     
     LYSChartSeriesBarInfo *seriesInfo = [[LYSChartSeriesBarInfo alloc] init];
-    seriesInfo.type = @"line";
+    seriesInfo.type = @"pie";
     seriesInfo.name = @"直接访问";
     seriesInfo.data = @[@10, @52, @200, @334, @390, @330, @220];
     optons.series = @[seriesInfo];

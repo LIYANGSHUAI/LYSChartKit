@@ -11,25 +11,21 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LYSChartGridInfo : LYSchartInfo
-// 边距
-@property (nonatomic, copy) NSString *left;
-@property (nonatomic, copy) NSString *top;
-@property (nonatomic, copy) NSString *bottom;
-@property (nonatomic, copy) NSString *right;
-
-// gird区域是否包含坐标轴的刻度标签,默认是不包括
-@property (nonatomic, assign) BOOL containLabel;
-
-// 网格背景色
-@property (nonatomic, strong) UIColor *backgroundColor;
-// 网格边框颜色
-@property (nonatomic, strong) UIColor *borderColor;
-// 网格边框线宽
-@property (nonatomic, assign) CGFloat borderWidth;
-
-// 提示组件
-@property (nonatomic, strong) LYSChartTooltipInfo *tooltip;
-
+/// 边距
+LYSCHARTADDCOPYPROPERTY(NSString *left);
+LYSCHARTADDCOPYPROPERTY(NSString *top);
+LYSCHARTADDCOPYPROPERTY(NSString *right);
+LYSCHARTADDCOPYPROPERTY(NSString *bottom);
+/// gird区域是否包含坐标轴的刻度标签,默认是不包括
+LYSCHARTADDASSIGNPROPERTY(BOOL containLabel);
+/// 网格背景色
+LYSCHARTADDSTRONGPROPERTY(UIColor *backgroundColor);
+/// 网格边框颜色
+LYSCHARTADDSTRONGPROPERTY(UIColor *borderColor);
+/// 网格边框线宽
+LYSCHARTADDASSIGNPROPERTY(CGFloat borderWidth);
+/// 提示组件
+LYSCHARTADDSTRONGPROPERTY(LYSChartTooltipInfo *tooltip);
 @end
 
 NS_ASSUME_NONNULL_END
