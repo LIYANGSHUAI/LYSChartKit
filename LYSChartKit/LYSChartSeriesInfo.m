@@ -12,9 +12,13 @@
 
 - (NSDictionary *)resultDict
 {
-    NSMutableDictionary *dict = LYSCHARTDICT;
-    LYSCHARTSETDICT(dict, self.type, @"type");
-    LYSCHARTSETDICT(dict, self.name, @"name");
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:[super resultDict]];
+    if (self.type) {
+        [dict setObject:self.type forKey:@"type"];
+    }
+    if (self.name) {
+        [dict setObject:self.name forKey:@"name"];
+    }
     return dict;
 }
 
@@ -24,9 +28,13 @@
 
 - (NSDictionary *)resultDict
 {
-    NSMutableDictionary *dict = LYSCHARTDICT;
-    LYSCHARTSETDICT(dict, self.barWidth, @"barWidth");
-    LYSCHARTSETDICT(dict, self.data, @"data");
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:[super resultDict]];
+    if (self.barWidth) {
+        [dict setObject:self.barWidth forKey:@"barWidth"];
+    }
+    if (self.data) {
+        [dict setObject:self.data forKey:@"data"];
+    }
     return dict;
 }
 

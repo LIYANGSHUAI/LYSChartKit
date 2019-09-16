@@ -9,11 +9,20 @@
 #import "LYSChartTooltipInfo.h"
 
 @implementation LYSChartTooltipInfo
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.show = YES;
+        self.trigger = @"item";
+    }
+    return self;
+}
 - (NSDictionary *)resultDict
 {
-    NSMutableDictionary *dict = LYSCHARTDICT;
-    LYSCHARTSETDICT(dict, @(self.show), @"show");
-    LYSCHARTSETDICT(dict, self.trigger, @"trigger");
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:[super resultDict]];
+    [dict setObject:@(self.show) forKey:@"show"];
+    [dict setObject:self.trigger forKey:@"trigger"];
     return dict;
 }
 @end

@@ -7,15 +7,12 @@
 //
 
 #import "LYSchartInfo.h"
-#import "LYSChartNameTextStyleInfo.h"
-#import "LYSChartAxisLabelInfo.h"
+#import "LYSChartAxisBaseInfo.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LYSChartYAxisInfo : LYSchartInfo
-// 坐标轴类型, value, category, log
-LYSCHARTADDCOPYPROPERTY(NSString *type);
-LYSCHARTADDSTRONGPROPERTY(LYSChartNameTextStyleInfo *nameTextStyle);
-LYSCHARTADDSTRONGPROPERTY(LYSChartAxisLabelInfo *axisLabel);
+@interface LYSChartYAxisInfo : LYSChartAxisBaseInfo
+/// y轴的位置 left, right
+@property (nonatomic, copy) NSString *position;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -9,10 +9,18 @@
 #import "LYSChartNameTextStyleInfo.h"
 
 @implementation LYSChartNameTextStyleInfo
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.fontSize = 15;
+    }
+    return self;
+}
 - (NSDictionary *)resultDict
 {
-    NSMutableDictionary *dict = LYSCHARTDICT;
-    LYSCHARTSETDICT(dict, @(self.fontSize), @"fontSize");
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:[super resultDict]];
+    [dict setObject:@(self.fontSize) forKey:@"fontSize"];
     return dict;
 }
 @end

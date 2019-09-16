@@ -11,9 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LYSChartTooltipInfo : LYSchartInfo
-// 显示和隐藏
-LYSCHARTADDASSIGNPROPERTY(BOOL show);
-LYSCHARTADDCOPYPROPERTY(NSString *trigger);
+/// 是否显示提示框组件，包括提示框浮层和 axisPointer。
+@property (nonatomic, assign) BOOL show;
+/// 触发类型。 'item'  'axis'  'none'
+@property (nonatomic, copy) NSString *trigger;
 @end
 
 NS_ASSUME_NONNULL_END

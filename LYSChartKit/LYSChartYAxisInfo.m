@@ -9,12 +9,18 @@
 #import "LYSChartYAxisInfo.h"
 
 @implementation LYSChartYAxisInfo
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.position = @"left";
+    }
+    return self;
+}
 - (NSDictionary *)resultDict
 {
-    NSMutableDictionary *dict = LYSCHARTDICT;
-    LYSCHARTSETDICT(dict, self.type, @"type");
-    LYSCHARTSETDICT(dict, self.nameTextStyle.resultDict, @"nameTextStyle");
-    LYSCHARTSETDICT(dict, self.axisLabel.resultDict, @"axisLabel");
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:[super resultDict]];
+    [dict setObject:self.position forKey:@"position"];
     return dict;
 }
 @end

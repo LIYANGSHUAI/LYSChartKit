@@ -14,10 +14,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LYSChartOption : LYSchartInfo
-LYSCHARTADDSTRONGPROPERTY(NSArray<LYSChartGridInfo *> *grids);
-LYSCHARTADDSTRONGPROPERTY(NSArray<LYSChartXAxisInfo *> *xAxis);
-LYSCHARTADDSTRONGPROPERTY(NSArray<LYSChartYAxisInfo *> *yAxis);
-LYSCHARTADDSTRONGPROPERTY(NSArray<LYSChartSeriesInfo *> *series);
+@property (nonatomic, strong) NSArray<LYSChartGridInfo *> *grids;
+@property (nonatomic, strong) NSArray<LYSChartXAxisInfo *> *xAxis;
+@property (nonatomic, strong) NSArray<LYSChartYAxisInfo *> *yAxis;
+@property (nonatomic, strong) NSArray<LYSChartSeriesInfo *> *series;
 @end
 
 NS_ASSUME_NONNULL_END

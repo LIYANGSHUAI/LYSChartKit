@@ -11,21 +11,29 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LYSChartGridInfo : LYSchartInfo
+
+/// 是否显示直角坐标系网格
+@property (nonatomic, assign) BOOL show;
+
 /// 边距
-LYSCHARTADDCOPYPROPERTY(NSString *left);
-LYSCHARTADDCOPYPROPERTY(NSString *top);
-LYSCHARTADDCOPYPROPERTY(NSString *right);
-LYSCHARTADDCOPYPROPERTY(NSString *bottom);
+@property (nonatomic, copy) NSString *left;
+@property (nonatomic, copy) NSString *top;
+@property (nonatomic, copy) NSString *right;
+@property (nonatomic, copy) NSString *bottom;
+
 /// gird区域是否包含坐标轴的刻度标签,默认是不包括
-LYSCHARTADDASSIGNPROPERTY(BOOL containLabel);
+@property (nonatomic, assign) BOOL containLabel;
+
 /// 网格背景色
-LYSCHARTADDSTRONGPROPERTY(UIColor *backgroundColor);
+@property (nonatomic, copy) NSString *backgroundColor;
 /// 网格边框颜色
-LYSCHARTADDSTRONGPROPERTY(UIColor *borderColor);
+@property (nonatomic, copy) UIColor *borderColor;
 /// 网格边框线宽
-LYSCHARTADDASSIGNPROPERTY(CGFloat borderWidth);
+@property (nonatomic, assign) CGFloat borderWidth;
+
 /// 提示组件
-LYSCHARTADDSTRONGPROPERTY(LYSChartTooltipInfo *tooltip);
+@property (nonatomic, strong) LYSChartTooltipInfo *tooltip;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -17,6 +17,7 @@
 		CC7E9FDA231679EB0034A696 /* LYSChartSeriesInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7E9FD9231679EB0034A696 /* LYSChartSeriesInfo.m */; };
 		CC7E9FDD23167D180034A696 /* LYSChartTooltipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7E9FDC23167D180034A696 /* LYSChartTooltipInfo.m */; };
 		CC7E9FE0231682480034A696 /* LYSchartInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7E9FDF231682480034A696 /* LYSchartInfo.m */; };
+		CC9B0894231E5A21004DE2B3 /* LYSChartAxisBaseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9B0893231E5A21004DE2B3 /* LYSChartAxisBaseInfo.m */; };
 		CCA245382315175C00257DCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA245372315175C00257DCC /* AppDelegate.m */; };
 		CCA2453B2315175C00257DCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA2453A2315175C00257DCC /* ViewController.m */; };
 		CCA2453E2315175C00257DCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA2453C2315175C00257DCC /* Main.storyboard */; };
@@ -49,7 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CC485A63231D09BD006914D1 /* LYSChartDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartDefine.h; sourceTree = "<group>"; };
 		CC485A69231D10E4006914D1 /* LYSChartNameTextStyleInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartNameTextStyleInfo.h; sourceTree = "<group>"; };
 		CC485A6A231D10E4006914D1 /* LYSChartNameTextStyleInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartNameTextStyleInfo.m; sourceTree = "<group>"; };
 		CC485A6C231D178E006914D1 /* LYSChartAxisLabelInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartAxisLabelInfo.h; sourceTree = "<group>"; };
@@ -69,6 +69,8 @@
 		CC7E9FDC23167D180034A696 /* LYSChartTooltipInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartTooltipInfo.m; sourceTree = "<group>"; };
 		CC7E9FDE231682480034A696 /* LYSchartInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSchartInfo.h; sourceTree = "<group>"; };
 		CC7E9FDF231682480034A696 /* LYSchartInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSchartInfo.m; sourceTree = "<group>"; };
+		CC9B0892231E5A21004DE2B3 /* LYSChartAxisBaseInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSChartAxisBaseInfo.h; sourceTree = "<group>"; };
+		CC9B0893231E5A21004DE2B3 /* LYSChartAxisBaseInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSChartAxisBaseInfo.m; sourceTree = "<group>"; };
 		CCA245332315175C00257DCC /* LYSChartKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSChartKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA245362315175C00257DCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCA245372315175C00257DCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -177,19 +179,28 @@
 		CC7E9FCE231679320034A696 /* options */ = {
 			isa = PBXGroup;
 			children = (
+				CC9B0891231E59DE004DE2B3 /* base */,
 				CC485A6F231D182C006914D1 /* common */,
 				CC485A68231D100E006914D1 /* tooltip */,
 				CC485A67231D1002006914D1 /* series */,
 				CC485A66231D0FE9006914D1 /* yAxis */,
 				CC485A65231D0FDB006914D1 /* grid */,
 				CC485A64231D0FCD006914D1 /* xAxis */,
-				CC485A63231D09BD006914D1 /* LYSChartDefine.h */,
 				CC7E9FDE231682480034A696 /* LYSchartInfo.h */,
 				CC7E9FDF231682480034A696 /* LYSchartInfo.m */,
 				CC7E9FC8231676D80034A696 /* LYSChartOption.h */,
 				CC7E9FC9231676D80034A696 /* LYSChartOption.m */,
 			);
 			name = options;
+			sourceTree = "<group>";
+		};
+		CC9B0891231E59DE004DE2B3 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				CC9B0892231E5A21004DE2B3 /* LYSChartAxisBaseInfo.h */,
+				CC9B0893231E5A21004DE2B3 /* LYSChartAxisBaseInfo.m */,
+			);
+			name = base;
 			sourceTree = "<group>";
 		};
 		CCA2452A2315175C00257DCC = {
@@ -397,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC7E9FDD23167D180034A696 /* LYSChartTooltipInfo.m in Sources */,
+				CC9B0894231E5A21004DE2B3 /* LYSChartAxisBaseInfo.m in Sources */,
 				CC7E9FD1231679740034A696 /* LYSChartGridInfo.m in Sources */,
 				CC7E9FD4231679C60034A696 /* LYSChartXAxisInfo.m in Sources */,
 				CC7E9FE0231682480034A696 /* LYSchartInfo.m in Sources */,

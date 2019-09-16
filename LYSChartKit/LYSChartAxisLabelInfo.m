@@ -14,25 +14,37 @@
     self = [super init];
     if (self) {
         self.show = YES;
+        self.interval = @"auto";
+        self.fontSize = 15;
+        self.inside = NO;
+        self.rotate = 0;
+        self.margin = 8;
+        self.color = @"#555555";
+        self.fontStyle = @"normal";
+        self.fontWeight = @"normal";
+        self.backgroundColor = @"transparent";
+        self.borderColor = @"transparent";
+        self.borderWidth = 0;
+        self.borderRadius = 0;
     }
     return self;
 }
 - (NSDictionary *)resultDict
 {
-    NSMutableDictionary *dict = LYSCHARTDICT;
-    LYSCHARTSETDICT(dict, @(self.fontSize), @"fontSize");
-    LYSCHARTSETDICT(dict, @(self.show), @"show");
-    LYSCHARTSETDICT(dict, self.interval, @"interval");
-    LYSCHARTSETDICT(dict, @(self.inside), @"inside");
-    LYSCHARTSETDICT(dict, @(self.rotate), @"rotate");
-    LYSCHARTSETDICT(dict, @(self.margin), @"margin");
-    LYSCHARTSETDICT(dict, self.color, @"color");
-    LYSCHARTSETDICT(dict, self.fontStyle, @"fontStyle");
-    LYSCHARTSETDICT(dict, self.fontWeight, @"fontWeight");
-    LYSCHARTSETDICT(dict, self.backgroundColor, @"backgroundColor");
-    LYSCHARTSETDICT(dict, self.borderColor, @"borderColor");
-    LYSCHARTSETDICT(dict, @(self.borderWidth), @"borderWidth");
-    LYSCHARTSETDICT(dict, @(self.borderRadius), @"borderRadius");
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:[super resultDict]];
+    [dict setObject:@(self.show) forKey:@"show"];
+    [dict setObject:self.interval forKey:@"interval"];
+    [dict setObject:@(self.inside) forKey:@"inside"];
+    [dict setObject:@(self.rotate) forKey:@"rotate"];
+    [dict setObject:@(self.margin) forKey:@"margin"];
+    [dict setObject:self.color forKey:@"color"];
+    [dict setObject:self.fontStyle forKey:@"fontStyle"];
+    [dict setObject:self.fontWeight forKey:@"fontWeight"];
+    [dict setObject:self.backgroundColor forKey:@"backgroundColor"];
+    [dict setObject:self.borderColor forKey:@"borderColor"];
+    [dict setObject:@(self.borderWidth) forKey:@"borderWidth"];
+    [dict setObject:@(self.borderRadius) forKey:@"borderRadius"];
+    [dict setObject:@(self.fontSize) forKey:@"fontSize"];
     return dict;
 }
 @end
